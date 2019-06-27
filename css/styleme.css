@@ -1,0 +1,227 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+div.page {
+    width: auto;
+    margin: 0;
+    height: 100%;
+}
+
+
+
+header{
+    position: static;
+    width:80%;
+    background-color: white;
+    margin: auto;
+    padding: 0;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1#ik {
+    display: inline-block;
+    padding:30px;
+    margin: 0;
+    background-color: #4aaaa5;
+    color:white;
+}
+
+
+ul.nav {
+    list-style: none;
+    margin: 0;
+    padding: 30px 0;
+    display: inline;
+    float: right;
+}
+
+ul.nav li{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #777777;
+    display: inline;
+    margin: 0;
+    padding: 0 20px;
+    font-size: large;
+}
+
+ul.nav li.last {
+    padding-right: 0;
+}
+a:link,:visited,:hover,:active{
+    text-decoration: none;
+    color:#777;
+}
+li+li 
+{ 
+    border-left: 1px solid #777777;
+}
+
+
+
+.myname {
+    background-color: #4aaaa5;
+
+}
+div.main{
+    background-image: url("../images/leaves-pattern.png");
+    /* overflow: auto; */
+    border-top: solid;
+    border-width: 3px;
+    border-color: #ddd;
+    height: 100%;
+
+}
+div.aboutme{
+   background-color: #ffffff;
+  width: 80%;
+  border-style: solid;
+  border-color: #ccc;
+  border-width: 1px;
+  margin:auto;
+  margin-top: 30px;
+  margin-bottom: 100px;
+  overflow: auto;
+}
+
+h1#am {
+    color: #4aaaa5;
+    padding-left: 30px;
+}
+
+
+hr {
+    margin: 30px;
+    color: #ddd;
+    border-style: solid;
+    border-top: 3px;
+    border-width: 3px;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    color:#777777;
+    line-height: 35px;
+    font-size: large;
+    line-height: 2;
+    padding: 0 30px;
+    float:none;
+}
+
+img{
+    display: inline;
+    float: left;
+    padding: 0px 30px 30px 30px;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+div#grey{
+    display: inline-flex;
+    align-items: flex-end;
+    width:100%;
+    background-color: #777777;
+    height:2cm;
+    margin: auto;
+    color: white;
+    justify-content: center;
+}
+div#green{
+    background-color:#4aaaa5;
+    width:100%;
+    height: 0.3cm;
+
+}
+
+/*CSS styling for contact.html page */
+
+form{
+    margin: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #777;
+    
+}
+
+input[type=submit]{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    background-color:#4aaaa5;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+input[type=text] {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+textarea {
+    width: 100%;
+}
+
+/* CSS styling for porfolio.html page */
+.tile {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    float: left;
+}
+
+.tile img {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+
+}
+
+.tile:hover{
+    border:2px solid #4aaaa5;
+    
+}
+
+.tile .title {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    color: white;
+    background-color: #4aaaa5;
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+@media screen and(max-width:640px){
+    header{
+        text-align: center;
+    }
+    h1#ik {
+        
+        padding:20px;
+        margin-top: 0;
+        background-color: #4aaaa5;
+        color:white;
+       
+    }
+    ul.nav {
+    margin-top: 0;
+    padding: 10px 0;
+    margin-bottom: 0;
+    
+    }
+}
