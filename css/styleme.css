@@ -69,7 +69,7 @@ li+li
 }
 div.main{
     background-image: url("../images/leaves-pattern.png");
-    /* overflow: auto; */
+    overflow: auto;
     border-top: solid;
     border-width: 3px;
     border-color: #ddd;
@@ -123,6 +123,7 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
+    margin-top:100%;
 }
 
 div#grey{
@@ -205,23 +206,70 @@ textarea {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+@media screen and (max-width: 980px){
+    div.aboutme{
+        background-color: #ffffff;
+       width: 70%;
+       border-style: solid;
+       border-color: #ccc;
+       border-width: 1px;
+       margin-left:20px;
+       margin-top: 30px;
+       margin-bottom: 100px;
+       
+     }
+     header{
+         width:80%;
+         margin-left:20px;
+     }
+ }
 
-@media screen and(max-width:640px){
+ @media screen and (max-width: 768px){
+    div.aboutme{
+        background-color: #ffffff;
+       width: 80%;
+       border-style: solid;
+       border-color: #ccc;
+       border-width: 1px;
+       margin-left:20px;
+       margin-top: 30px;
+       margin-bottom: 100px;
+       
+     }
+     header{
+         width:80%;
+         margin-left:20px;
+     }
+ }
+ 
+
+@media screen and (max-width: 640px){
     header{
         text-align: center;
+        width:100%;
+        margin-left:0;
+        height:150px;
+        padding-top:0;
     }
-    h1#ik {
+     h1#ik {
         
         padding:20px;
         margin-top: 0;
         background-color: #4aaaa5;
         color:white;
+        width:100%;
        
     }
     ul.nav {
     margin-top: 0;
-    padding: 10px 0;
-    margin-bottom: 0;
+    padding: 20px 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    width:100%;
+    float:none;
+    padding-top:0;
     
     }
-}
+} 
+
+
